@@ -1,0 +1,14 @@
+/target
+# Local runtime artifacts
+fisml.db
+*.db
+*.sqlite
+fisml.key
+# If you copy the release binary into repo root
+/fisml
+# Exported JSON snapshots
+export-*.json
+# Logs (if you add logging to file later)
+*.log
+# Avoid committing local override config; commit example instead
+# fisml.toml

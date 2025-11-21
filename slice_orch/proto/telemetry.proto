@@ -1,0 +1,7 @@
+syntax = "proto3";
+package sliceorchestrator.telemetry.v1;
+
+message TelemetrySample { string slice_id = 1; uint32 latency_ms = 2; }
+service TelemetryIngest { rpc Push (TelemetrySample) returns (Ack); }
+message Ack { bool ok = 1; }
+

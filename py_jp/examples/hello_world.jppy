@@ -1,0 +1,10 @@
+# Hello World in Python_jp - Direct version
+
+デフ greet(name):
+    プリント(f"こんにちは、{name}さん!")
+
+greet("世界")
+
+プリント("数を数えます:")
+フォー i イン レンジ(1, 6):
+    プリント(i)

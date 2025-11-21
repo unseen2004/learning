@@ -1,0 +1,7 @@
+syntax = "proto3";
+package sliceorchestrator.policy.v1;
+
+message Policy { string name = 1; string rule = 2; }
+message PolicyVerdict { string name = 1; bool valid = 2; string reason = 3; }
+service PolicyService { rpc Verify (Policy) returns (PolicyVerdict); }
+

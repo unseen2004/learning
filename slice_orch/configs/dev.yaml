@@ -1,0 +1,4 @@
+# Dev configuration overrides
+rest_host: 127.0.0.1
+rest_port: 8081
+

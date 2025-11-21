@@ -1,0 +1,56 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  username  String   @unique
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  cocktails Cocktail[]
+  ingredients Ingredient[]
+}
+
+model Cocktail {
+  id           Int      @id @default(autoincrement())
+  name         String   @unique @db.VarChar(255)
+  category     String?  @db.VarChar(255)
+  instruction  String?  @db.VarChar(5000)
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt  @map("updated_at")
+  userId       Int     @map("user_id")
+  user         User    @relation(fields: [userId], references: [id])
+
+  ingredients  CocktailIngredient[]
+}
+
+model Ingredient {
+  id           Int      @id @default(autoincrement())
+  name         String   @unique @db.VarChar(255)
+  description  String?  @db.VarChar(5000)
+  alcohol      Boolean  @default(false)
+  photo        String?
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+  userId       Int     @map("user_id")
+  user         User    @relation(fields: [userId], references: [id])
+
+  cocktails    CocktailIngredient[]
+}
+
+model CocktailIngredient {
+  cocktailId    Int
+  ingredientId  Int
+  quantity      String? @db.VarChar(255)
+  cocktail      Cocktail   @relation(fields: [cocktailId], references: [id], onDelete: Cascade)
+  ingredient    Ingredient @relation(fields: [ingredientId], references: [id], onDelete: Cascade)
+
+  @@id([cocktailId, ingredientId])
+}

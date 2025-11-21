@@ -1,0 +1,15 @@
+[package]
+name = "queue_system"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+qrcode = "0.14"
+image = "0.25"
+opencv = { version = "0.92", features = ["rgb"] }
+tokio = { version = "1", features = ["full"] }
+clap = { version = "4", features = ["derive"] }
+crossterm = "0.27"
+chrono = "0.4"
+uuid = { version = "1", features = ["v4"] }
+anyhow = "1"

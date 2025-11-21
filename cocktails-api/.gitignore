@@ -1,0 +1,45 @@
+# Temporary directories
+/tmp
+/out-tsc
+
+# Node modules and package manager logs
+/node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/.pnp
+.pnp.js
+
+# IDE / Editor configuration files
+.vscode/*
+.idea/
+
+# Build outputs
+/dist/
+/build/
+
+# Environment variable files
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+*.log
+logs/
+
+# Uploaded files
+uploads/
+
+# Coverage reports
+coverage/
+
+# OS generated files
+.DS_Store
+
+# Temporary files
+tmp/
+temp/
+
