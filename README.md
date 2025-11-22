@@ -1,6 +1,7 @@
 # Learning
 
-A multi-repository collection of learning projects covering various technologies and domains.
+A multi-repository collection of learning projects covering various technologies and domains.          
+Use https://github.com/unseen2004/mono-clone to clone specific project.
 
 ---
 
