@@ -95,3 +95,18 @@ npm run test-watch
 ## License
 
 MIT License
+
+<!-- REPOS-CLI:START -->
+[![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+
+**Node.js Dependencies:** @prisma/client, @types/bcrypt, @types/cors, @types/express, @types/jest, @types/jsonwebtoken, @types/morgan, @types/multer, @types/node, @types/supertest, and more...
+
+## Recent Updates
+
+- Update README.md (54ebf28)
+- feat: readme (24095d9)
+- batman (f2e39d0)
+
+
+<!-- REPOS-CLI:END -->

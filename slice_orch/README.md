@@ -78,3 +78,26 @@ Protocol buffers in `proto/` are automatically generated during build via `build
 ## License
 
 Apache-2.0
+
+<!-- REPOS-CLI:START -->
+[![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)](https://www.rust-lang.org/)
+
+**Rust Dependencies:** anyhow, async-trait, axum, config, dashmap, futures, once_cell, opentelemetry, opentelemetry-otlp, opentelemetry_sdk, and more...
+
+## Docker
+
+Build and run with Docker:
+
+```bash
+docker build -t slice_orch .
+docker run -it slice_orch
+```
+
+## Recent Updates
+
+- Update README.md (54ebf28)
+- feat: readme (24095d9)
+- batman (f2e39d0)
+
+
+<!-- REPOS-CLI:END -->
