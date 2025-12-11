@@ -61,12 +61,6 @@ High-performance C++ web server with LRU cache and optional RDMA support.
 Individual projects may have their own licenses. Check each project directory for details.
 
 <!-- REPOS-CLI:START -->
-[![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)](https://www.rust-lang.org/)
-[![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/)
-[![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white)](https://golang.org/)
-
 ## Sub-Projects
 
 - **cocktails-api**
@@ -76,17 +70,17 @@ Individual projects may have their own licenses. Check each project directory fo
 - **minigrep**
 - **pattern_search**
 - **queue_system**
+- **repos-cli**
 - **rust_cli**
-- **slice_orch**
 - **visualize_cnn**
 
 ## Recent Updates
 
+- feat: add book recommendation microservice (b4ef589)
 - readme (d6c2581)
 - readme (5246513)
 - Update README.md (54ebf28)
 - feat: readme (24095d9)
-- batman (f2e39d0)
 
 
 <!-- REPOS-CLI:END -->

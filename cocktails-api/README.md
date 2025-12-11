@@ -104,11 +104,11 @@ MIT License
 
 ## Recent Updates
 
+- feat: add book recommendation microservice (b4ef589)
 - readme (d6c2581)
 - readme (5246513)
 - Update README.md (54ebf28)
 - feat: readme (24095d9)
-- batman (f2e39d0)
 
 
 <!-- REPOS-CLI:END -->

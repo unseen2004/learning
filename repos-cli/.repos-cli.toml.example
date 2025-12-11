@@ -1,0 +1,76 @@
+# .repos-cli.toml - Configuration file for repos-cli README generation
+# 
+# Place this file in the root of your repository to customize how the CLI
+# generates and updates your README.md file.
+#
+# To use: Copy this file and rename it to `.repos-cli.toml`
+
+# Auto-update: Controls whether this repository's README should be updated
+# when running `repos-cli update`
+# 
+# Set to false if you want to temporarily disable updates without removing
+# the repository from tracking
+# Default: true
+auto_update = true
+
+# Features: Enable or disable specific README sections
+[features]
+
+# Badges: Generates status badges (build, version, license, etc.)
+# Examples: ![Build Status], ![Version], ![License: MIT]
+# Default: true
+badges = true
+
+# Emoji: Adds emoji icons to section headers and lists
+# Examples: 📦 for packages, ⚙️ for configuration, 🚀 for deployment
+# Default: true
+emoji = true
+
+# Changelog: Generates a changelog section from git history
+# Includes recent commits, releases, and version information
+# Default: true
+changelog = true
+
+# Dependencies: Lists project dependencies and requirements
+# Detects: Cargo.toml, package.json, requirements.txt, go.mod, etc.
+# Default: true
+dependencies = true
+
+# Docker: Generates Docker-related documentation
+# Includes Dockerfile information, container setup, and usage
+# Default: true
+docker = true
+
+# Categorizer: Automatically categorizes and organizes repository content
+# Groups files by type (source, tests, docs, configs, etc.)
+# Default: true
+categorizer = true
+
+# Example configurations for different use cases:
+#
+# Minimal README (only badges and dependencies):
+# [features]
+# badges = true
+# emoji = false
+# changelog = false
+# dependencies = true
+# docker = false
+# categorizer = false
+#
+# Documentation-focused README (no technical details):
+# [features]
+# badges = true
+# emoji = true
+# changelog = false
+# dependencies = false
+# docker = false
+# categorizer = true
+#
+# Full-featured README (all features enabled):
+# [features]
+# badges = true
+# emoji = true
+# changelog = true
+# dependencies = true
+# docker = true
+# categorizer = true

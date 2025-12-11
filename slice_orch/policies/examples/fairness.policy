@@ -1,2 +1,0 @@
-rule fairness { ensure bandwidth_share <= 0.3 }
-

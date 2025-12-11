@@ -1,2 +1,0 @@
-rule isolation_guard { when isolation == true then ensure dedicated_resources }
-

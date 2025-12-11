@@ -1,2 +1,0 @@
-rule latency_priority { when latency_sla_ms < 20 then priority = HIGH }
-
