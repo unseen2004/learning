@@ -11,7 +11,7 @@
 # Set to false if you want to temporarily disable updates without removing
 # the repository from tracking
 # Default: true
-auto_update = true
+auto_update = false 
 
 # Features: Enable or disable specific README sections
 [features]
