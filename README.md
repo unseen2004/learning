@@ -17,3 +17,5 @@ git checkout 8baf0d7294caca9a4c3a3295369a60d1df6118ab
 Now follow use mono-clone to get specific project/dir from this monorepo.
 
 2) Use git commands as upper to get all specific project/dirs you want.
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=unseen2004&repo=learning&theme=dracula&hide=html,css&langs_count=10)](https://github.com/anuraghazra/github-readme-stats)
