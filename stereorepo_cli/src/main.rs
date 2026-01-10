@@ -112,6 +112,12 @@ fn add_modules(modules: &[String]) -> Result<()> {
         .status()
         .context("Failed to update checkout")?;
 
+    if !status.success() {
+        return Err(anyhow!("Git checkout failed"));
+    }
+
+    Ok(())
+}
 
 fn set_sparse_checkout(path: &Path, modules: &[String]) -> Result<()> {
     let status = Command::new("git")
