@@ -14,7 +14,7 @@ This guide explains how to efficiently work with the **stereorepo**. Since the `
 Since you don't have the `stereorepo` tool yet, you must manually perform a sparse checkout to get *only* the CLI source code without downloading the entire monorepo.
 
 1.  **Clone the repository metadata (no files yet):**
-    Replace `<STEREOREPO_URL>` with the actual git URL (e.g., `git@github.com:org/stereorepo.git`).
+    Replace `<STEREOREPO_URL>` with the actual git URL (e.g., `https://github.com/user/stereorepo.git`).
     ```bash
     git clone --filter=blob:none --no-checkout <STEREOREPO_URL> stereorepo_bootstrap
     cd stereorepo_bootstrap
@@ -26,7 +26,6 @@ Since you don't have the `stereorepo` tool yet, you must manually perform a spar
     ```
 
 3.  **Checkout only the CLI directory:**
-    Assuming the CLI is located at `stereorepo_cli` in the root of the repo (adjust the path if it is in `tools/stereorepo_cli` etc.):
     ```bash
     git sparse-checkout set stereorepo_cli
     git checkout
@@ -55,23 +54,23 @@ Now that you have the source code for the CLI:
 
 Now you can use the `stereorepo` tool to easily check out other parts of the repository into fresh directories, or manage your current one.
 
-### Scenario A: Clone a specific project into a new directory
+### Scenario A: Clone specific projects into a new directory
 
-If you want to start working on the `backend` and `shared-libs` modules in a clean folder:
+If you want to start working on the `cocktails-api` and `algo_lib` modules in a clean folder:
 
 ```bash
-stereorepo clone <STEREOREPO_URL> my-feature-workspace --modules backend,shared-libs
+stereorepo clone <STEREOREPO_URL> my-feature-workspace --modules cocktails-api,algo_lib
 ```
 
 This will create a `my-feature-workspace` directory containing only those two folders.
 
 ### Scenario B: Add more modules to an existing workspace
 
-If you are already in a workspace (like the one created in Scenario A) and decide you also need the `frontend`:
+If you are already in a workspace (like the one created in Scenario A) and decide you also need the `ecommerce_project`:
 
 ```bash
 cd my-feature-workspace
-stereorepo add frontend
+stereorepo add ecommerce_project
 ```
 
 ### Scenario C: List active modules
@@ -81,3 +80,16 @@ To see what you currently have checked out:
 ```bash
 stereorepo list
 ```
+
+---
+
+## Available Modules
+
+Some of the available modules in this repository include:
+
+- `algo_lib`: Library of common algorithms and data structures.
+- `cocktails-api`: Node.js/Prisma API for cocktail management.
+- `dir_ml`: Collection of machine learning projects.
+- `dir_tools`: Various utility tools including `minigrep` and `repos-cli`.
+- `ecommerce_project`: Full-stack e-commerce application.
+- `webserver_cache_rdma`: RDMA-enabled web server cache.
